@@ -1,0 +1,19 @@
+{
+  "a.b.agentOverview": {
+    "id": "agentOverview",
+    "type": "page",
+    "contentLayout": {
+      "component": "Grid",
+      "componentProps": {
+        "gap": "small"
+      }
+    },
+    "content": [
+      {
+        "id": "claimList",
+        "type": "container",
+        "component": "ClaimList"
+      }
+    ]
+  }
+}
