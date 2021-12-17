@@ -13,7 +13,32 @@
         "id": "claimList",
         "type": "container",
         "component": "ClaimList"
-      }
+      },
+      {
+         "id": "buttonWrapper",
+         "component": "div",
+         "contentLayout": {
+            "component": "Flex",
+            "componentProps": {
+                "justifyContent": "middle"
+            }
+         },
+         "content": [
+            {
+                "id": "ButtonLink",
+                "type": "element",
+                "component": "ButtonLink",
+                "content": {
+                    "id": "buttonLinkContent",
+                    "defaultMessage": "Start new claim"
+                },
+                "componentProps": {
+                    "to": "/claim/fnol/context"
+                }
+            }
+         ]
+        }
+   
     ]
   }
 }
