@@ -22,6 +22,8 @@ import { BillPaymentFormPanel } from '../pages/Blueprints/BillPaymentForm/BillPa
 import { BillPaymentAccountDetailsPanel } from '../pages/Blueprints/AccountDetailsPage/AccountDetailsPage';
 import { ApiExample } from '../pages/ApiExample/ApiExample';
 
+import { AgentOverview } from '..\\pages\\AgentOverview';
+
 const settingsRouteConfig = {
     title: {
         id: 'jutro-app.Pages.Settings.title',
@@ -107,6 +109,7 @@ export const AppRoot = () => {
                 <AppFloorPlan
                     componentMap={{
                         ...componentMap,
+
                         FloorPlanPage: () => (
                             <FloorPlanPage
                                 title="FloorPlan"
@@ -116,6 +119,8 @@ export const AppRoot = () => {
                                 )}
                             />
                         ),
+
+                        AgentOverview: AgentOverview
                     }}
                     floorPlans={floorPlans}
                     callbackMap={callbackMap}
