@@ -166,6 +166,15 @@
         "path": "/AgentOverview",
         "exact": true,
         "component": "AgentOverview"
+      },
+      {
+        "title": {
+          "id": "jutro-app.Pages.OnePageForm.title",
+          "defaultMessage": "OnePageForm"
+        },
+        "path": "/OnePageForm",
+        "exact": true,
+        "component": "OnePageForm"
       }
     ],
     "header": {

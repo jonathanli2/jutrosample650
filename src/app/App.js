@@ -24,6 +24,8 @@ import { ApiExample } from '../pages/ApiExample/ApiExample';
 
 import { AgentOverview } from '..\\pages\\AgentOverview';
 
+import { OnePageForm } from '..\\pages\\OnePageForm';
+
 const settingsRouteConfig = {
     title: {
         id: 'jutro-app.Pages.Settings.title',
@@ -120,7 +122,8 @@ export const AppRoot = () => {
                             />
                         ),
 
-                        AgentOverview: AgentOverview
+                        AgentOverview: AgentOverview,
+                        OnePageForm: OnePageForm
                     }}
                     floorPlans={floorPlans}
                     callbackMap={callbackMap}

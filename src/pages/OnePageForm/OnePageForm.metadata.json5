@@ -1,0 +1,102 @@
+{
+  "$schema": "../metadata.schema.json",
+  "jutro": "6.2.0",
+  "myApp.myFeature.myForm": {
+    "id": "myForm",
+    "type": "page",
+    "contentLayout": {
+      "component": "grid",
+      "componentProps": {
+        "gap": "small"
+      }
+    },
+    "content": [
+      {
+        "id": "panel",
+        "type": "container",
+        "component": "panel",
+        "componentProps": {
+          "title": {
+            "id": "myApp.myForm.YourEmail",
+            "defaultMessage": "Give me your email"
+          }
+        },
+        "content": [
+          {
+            "id": "form",
+            "type": "container",
+            "component": "div",
+            "contentLayout": {
+              "component": "grid",
+              "componentProps": {
+                "gap": "large"
+              }
+            },
+            "content": [
+              {
+                "id": "paragraphAboutYourBuild",
+                "type": "element",
+                "component": "intlelement",
+                "componentProps": {
+                  "tag": "p"
+                },
+                "content": {
+                  "id": "myApp.myForm.loremIpsum",
+                  "defaultMessage": "I want to stay in touch, so give me your email, please!"
+                }
+              },
+              {
+                "id": "email",
+                "type": "field",
+                "datatype": "text",
+                "componentProps": {
+                  "path": "baseData.email",
+                  "label": {
+                    "id": "myApp.myForm.email",
+                    "defaultMessage": "Email"
+                  },
+                  "hideLabel": true,
+                  "placeholder": {
+                    "id": "myApp.myForm.yearBuilt.pleaseSelect",
+                    "defaultMessage": "Type your email in here, please"
+                  },
+                  "required": true
+                }
+              },
+              {
+                "id": "actionBar",
+                "type": "container",
+                "component": "div",
+                "contentLayout": {
+                  "component": "grid",
+                  "componentProps": {
+                    "columns": [
+                      "1fr"
+                    ],
+                    "justifyItems": "evenly"
+                  }
+                },
+                "content": [
+                  {
+                    "id": "save",
+                    "type": "action",
+                    "component": "Button",
+                    "componentProps": {
+                      "size": "medium",
+                      "onClick": "saveForm"
+                    },
+                    "content": {
+                      "id": "myApp.myForm.submit",
+                      "defaultMessage": "Submit",
+                      "description": "Submit the form"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
